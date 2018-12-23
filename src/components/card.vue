@@ -14,6 +14,8 @@
     </ol>
     <button v-on:click="getcardlist">test axios</button>
     <button v-on:click="gethourlist">hour data</button>
+    <Button v-on:click="getcardlist" type="primary">test axios</Button>
+    <Button>Default</Button>
   </div>
 </template>
 
