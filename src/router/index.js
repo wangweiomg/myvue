@@ -14,7 +14,7 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/card',
+      path: '/menu/card',
       name: 'card',
       component: cardlist
     },

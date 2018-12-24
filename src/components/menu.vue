@@ -6,7 +6,7 @@
                 Navigation One
             </template>
             <MenuGroup title="Item 1">
-                <MenuItem name="1-1" target="/card">Option 1</MenuItem>
+                <MenuItem name="1-1" to="/menu/card">Option 1</MenuItem>
                 <MenuItem name="1-2">Option 2</MenuItem>
             </MenuGroup>
             <MenuGroup title="Item 2">
