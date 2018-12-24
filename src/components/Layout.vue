@@ -10,11 +10,11 @@
                 Navigation One
             </template>
             <MenuGroup title="Item 1">
-                <MenuItem name="1-1" on-select="routelink=('/card')">Option 1</MenuItem>
-                <MenuItem name="1-2" on-select="routelink=('/hello')">Option 2</MenuItem>
+                <MenuItem name="1-1" v-on:click="routelink('/card')">Option 1</MenuItem>
+                <MenuItem name="1-2" on-select="routelink('/card')">Option 2</MenuItem>
             </MenuGroup>
             <MenuGroup title="Item 2">
-                <MenuItem name="1-3">Option 3</MenuItem>
+                <MenuItem name="1-3" v-on:click="sayhi">Option 3</MenuItem>
                 <MenuItem name="1-4">Option 4</MenuItem>
             </MenuGroup>
         </Submenu>
@@ -57,10 +57,10 @@
             return {}
         },
         methods: {
-            routelinke: (url) =>{
+            routelink(url){
                 console.log(123);
                 this.$router.push(url);
-            }
+            },
         }
         
     }
