@@ -1,31 +1,29 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import cardlist from '@/components/card'
-import Layout from '@/components/Layout'
+import Vue from "vue";
+import Router from "vue-router";
+import HelloWorld from "@/components/HelloWorld";
+import cardlist from "@/components/card";
+import Layout from "@/components/Layout";
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Layout',
+      path: "/",
+      name: "Layout",
       component: Layout,
       children: [
         {
-          path: '/card',
-          name: 'card',
+          path: "/card",
+          name: "card",
           component: cardlist
-        },
-        {
-          path: '/hello',
-          name: 'HelloWorld',
-          component: HelloWorld
-        },
+        }
       ]
     },
-    
-    
+    {
+      path: "/hello",
+      name: "HelloWorld",
+      component: HelloWorld
+    }
   ]
-})
+});
